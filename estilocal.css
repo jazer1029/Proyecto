@@ -1,0 +1,175 @@
+
+body {
+   /* background: linear-gradient(130deg, blue, rgb(111, 111, 189), gray);*/
+
+    display: flex;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgb(78, 127, 196) 0%, 
+          rgb(161, 134, 187) 25%, 
+          rgb(211, 79, 88) 51%, 
+          rgb(0, 16, 242) 100%
+    );  
+    animation: AnimateBG 10s ease infinite;
+  }
+  
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+
+}
+
+.txt {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 0 30px 170px;
+    text-shadow: 2px 2px 4px rgb(83, 83, 83);
+    width: 180px;
+    height: 36.500px;
+}
+
+form {
+    background-color: rgb(128, 153, 162);
+    width: 500px;
+    height: 600px;
+    border-radius: 5px 60px 5px 60px;
+    margin: 130px 500px;
+    border: 3px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+    width: 347px;
+    height: 50px;
+    background-color: rgb(107, 107, 114);
+    margin-left: 67px;
+    color: rgb(46, 46, 46);
+    font-size: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 45px 5px 65px;
+    width: 375px;
+    height: 390px;
+
+}
+
+.C {
+    width: 205px;
+    height: 70px;
+    
+}
+
+.btnC {
+    width: 203px;
+    height: 65px;
+    margin: 5px 0 2px 0;
+    font-size: 35px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.2s;
+    border-radius: 10px 0px 0px 0px; 
+    border-color: white; 
+}
+
+.btnC:hover{
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.btnF {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn {
+    width: 65px;
+    height: 88.5px;
+    margin: 3px 0;
+    border-color: white;
+    cursor: pointer;
+    font-size: 20PX;
+    transition-duration: 0.2s;
+
+}
+
+.btn:hover{
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.btnf {
+    width: 73px;
+    height: 65px;
+    margin: 1.5px 2px;
+    border-color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+}
+
+.btnf:hover{
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.multi{
+    width: 78px;
+    height: 65px;
+    margin: 5px 3px 3px 3px;
+    border-color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+}
+
+.multi:hover{
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.cero {
+    width: 78px;
+    height: 180px;
+    margin: 3px 3px 3px 3px;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 35px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    
+}
+
+.cero:hover{
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.punto {
+    width: 78px;
+    height: 88px;
+    margin: 3px 3px;
+    border-color: white;
+    cursor: pointer;
+    font-size: 25px;
+    transition-duration: 0.2s;
+
+}
+
+.punto:hover{
+    background-color: rgb(207, 207, 207);
+    color: black;
+}
+
+.ceroypunto {
+    display: flex;
+    flex-direction: column;
+    
+}
