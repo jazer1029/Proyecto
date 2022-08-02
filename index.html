@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilocal.css">
+    <title>Prueba</title>
+
+</head>
+
+<body>
+    <div id="Cal">
+        <form id="form" name="calculadora">
+
+            <h1 class="txt">Calculadora</h1>
+
+            <input id="result" value="" type="text" class='screen' readonly>
+
+            <div class="contenedor">
+                <div class="btnN">
+
+                    <div class="C">
+                        <button class="btnC" value="C" onclick="clearScreen()" type='button'>
+                            <strong>C</strong></button>
+                    </div>
+
+                    <div>
+                        <button class="btn" type="button" value="1" onClick="display('1')">
+                            <strong>1</strong></button>
+                        <button class="btn" type="button" value="2" onClick="display('2')">
+                            <strong>2</strong></button>
+                        <button class="btn" type="button" value="3" onClick="display('3')">
+                            <strong>3</strong></button>
+                    </div>
+
+                    <div>
+                        <button class="btn" type="button" value="4" onClick="display('4')">
+                            <strong>4</strong></button>
+                        <button class="btn" type="button" value="5" onClick="display('5')">
+                            <strong>5</strong></button>
+                        <button class="btn" type="button" value="6" onClick="display('6')">
+                            <strong>6</strong></button>
+                    </div>
+
+                    <div>
+                        <button class="btn" style="border-radius: 0px 0px 0px 10px; border-color: white; " type="button"
+                            value="7" onClick="display('7')">
+                            <strong>7</strong></button>
+                        <button class="btn" type="button" value="8" onClick="display('8')">
+                            <strong>8</strong></button>
+                        <button class="btn" type="button" value="9" onClick="display('9')">
+                            <strong>9</strong></button>
+
+                    </div>
+                </div>
+
+                <div class="ceroypunto">
+                    <button class="multi" type="button" value="*" onClick="display('*')">
+                        <strong>*</strong> </button>
+                    <button class="cero" type="button" value="0" onClick="display('0')">
+                        <strong>0</strong> </button>
+                    <button class="punto" style="font-size: 25px;" type="button" value="."
+                    onClick="display('.')">
+                        <strong>.</strong></button>
+                </div>
+
+
+                <div class="btnF">
+                    <button class="btnf" style="border-radius: 0px 10px 0px 0px; margin-top: 5px;"
+                        type="button" style="margin: 5px 0 2px 0;" value="+"
+                        onClick="display('+')">+</button>
+                    <button class="btnf" type="button" value="-"
+                        onClick="display('-')">-</button>
+                    <button class="btnf" type="button" value="/"
+                        onClick="display('/')">/</button>
+                    <button class="btnf" style="border-radius: 0px 0px 10px 0px; height: 140.3px" type="button"
+                        value="=" onClick="Igual()">=</button>
+
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
